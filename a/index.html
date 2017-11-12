@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body,dl,dt,dd{
+				margin: 0px;
+				padding: 0px;
+			}
+			body{
+				font-size: 12px; 
+			}
+			#method{
+				width: 900px; 
+				margin: 0px auto;
+				
+				/*固定宽度且居中*/
+				
+				overflow: hidden;
+				/*因为子全部浮动走了,所以父失去了高度,这个现象叫CSS塌陷，解决办法利用overflow*/
+				
+			}
+			#method dl{
+				
+				border: 1px solid #AAA;  
+				float: left;               
+				margin: 20px 0px 0px 30px;     
+				/*调整定义列表之间的距离*/
+				
+			}
+			#method dl dt{
+				width: 180px;
+				height: 120px;
+				line-height: 120px;  /*垂直居中*/
+				margin: 3px;
+				background-color: #fff;
+			}
+			#method dl dd{
+				width: 180px;
+				margin: 3px;
+				height: 30px;
+				line-height: 30px; 
+				background-color: #fff;
+				text-align: center; /*文字居中*/
+			}
+			#method dl dt img{
+				width: 180px;
+			}
+			#method dd{
+				color: #AAA;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="method">
+			<!--公式： (dl>(dt{定义列表标题$}+dd{定义列表说明$}))*8-->
+			<dl>
+				<dt><img src="img/san.jpg"/></dt> 
+				<dd>三生三世十里桃花</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/san.jpg"/></dt>
+				<dd>三生三世十里桃花</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/san.jpg"/></dt>
+				<dd>三生三世十里桃花</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/san.jpg"/></dt>
+				<dd>三生三世十里桃花</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/san.jpg"/></dt>
+				<dd>三生三世十里桃花</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/san.jpg"/></dt>
+				<dd>三生三世十里桃花</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/san.jpg"/></dt>
+				<dd>三生三世十里桃花</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/san.jpg"/></dt>
+				<dd>三生三世十里桃花</dd>
+			</dl>
+		</div>
+	</body>
+</html>
